@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="aside">
+            <div class="profile">
+                <div class="profile__photo">
+                    <img src="imgs/profile_photo.png" alt="profile__photo">
+                </div>
+                <div class="profile__name">
+                    <p>Newton Barley <i class="fas fa-chevron-down"></i></p>
+                </div>
+            </div>
+            <div class="menu__main">
+                <h3>Main</h3>
+                <ul class="menu__main--items">
+                    <li class="menu__main--item">
+                        <a href="#" class="menu__main--link">
+                            <i class="fas fa-home"></i> home
+                        </a>
+                    </li>
+                    <li class="menu__main--item">
+                        <a href="#" class="menu__main--link">
+                            <i class="fas fa-briefcase"></i> jobs
+                        </a>
+                    </li>
+                    <li class="menu__main--item">
+                        <a href="#" class="menu__main--link">
+                            <i class="fas fa-file"></i> resumes
+                        </a>
+                    </li>
+                    <li class="menu__main--item">
+                        <a href="#" class="menu__main--link">
+                            <i class="fas fa-tasks"></i> tasks
+                        </a>
+                    </li>
+                    <li class="menu__main--item">
+                        <a href="#" class="menu__main--link">
+                            <i class="fas fa-calendar-alt"></i> calendar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu__main">
+                <h3>Admin</h3>
+                <ul class="menu__main--items">
+                    <li class="menu__main--item">
+                        <a href="#" class="menu__main--link">
+                            <i class="fas fa-user-friends"></i> users
+                        </a>
+                    </li>
+                    <li class="menu__main--item">
+                        <a href="#" class="menu__main--link">
+                            <i class="fas fa-map-marker-alt"></i> locations
+                        </a>
+                    </li>
+                    <li class="menu__main--item">
+                        <a href="#" class="menu__main--link">
+                            <i class="fas fa-network-wired"></i> workflows
+                        </a>
+                    </li>
+                    <li class="menu__main--item">
+                        <a href="#" class="menu__main--link">
+                            <i class="fas fa-clipboard-list"></i> job boards
+                        </a>
+                    </li>
+                    <li class="menu__main--item">
+                        <a href="#" class="menu__main--link">
+                            <i class="fas fa-bezier-curve"></i> social
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu__categories">
+                <h3>Categories</h3>
+                <ul class="menu__categories--items">
+                    <li class="menu__categories--item">
+                        <input type="checkbox" class="menu__categories--checkbox"><span>Administrative</span>
+                    </li>
+                    <li class="menu__categories--item">
+                        <input type="checkbox" class="menu__categories--checkbox"><span>Design</span>
+                    </li>
+                    <li class="menu__categories--item">
+                        <input type="checkbox" class="menu__categories--checkbox"><span>Executive</span>
+                    </li>
+                    <li class="menu__categories--item">
+                        <input type="checkbox" class="menu__categories--checkbox"><span>Human Resources</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+
+        <main class="main">
+            <header class="header">
+                <div class="search">
+                    <i class="fas fa-search"></i><input type="search" placeholder="Search for a job, task or resume">
+                </div>
+                <div class="logo">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <div class="logo">
+                    <i class="fas fa-calendar-plus"></i>
+                </div>
+                <div class="logo">
+                    <i class="fas fa-th"></i>
+                </div>
+            </header>
+            <section class="up__info">
+                <div class="up__info--main">
+                    <h1>Customer Service Representative</h1>
+                    <div class="up__info--text">
+                        <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA </p>
+                        <p class="point"></p>
+                        <p class="accent__color">Preview this post</p>
+                    </div>
+                </div>
+                <div class="up__info--bookmarks">
+                    <div class="up__info--bookmark open">
+                        <div class="circle"></div> <span>open</span>
+                    </div>
+                    <div class="up__info--bookmark">
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                    <div class="up__info--bookmark">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="up__info--bookmark">
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs" id="tabs">
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1" title="summary">
+                    summary
+                </label>
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2" title="applicants">
+                    applicants
+                </label>
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3" title="job board">
+                    job board
+                </label>
+                <input id="tab4" type="radio" name="tabs">
+                <label for="tab4" title="interviews">
+                    interviews
+                </label>
+                <input id="tab5" type="radio" name="tabs">
+                <label for="tab5" title="interviews">
+                    activity
+                </label>
+                <input id="tab6" type="radio" name="tabs">
+                <label for="tab6" title="interviews">
+                    broadcast
+                </label>
+                <input id="tab7" type="radio" name="tabs">
+                <label for="tab7" title="interviews">
+                    notifications
+                </label>
+
+                <section id="content-tab1" class="content-tab">
+                    <div class="stats">
+                        <div class="stats__items">
+                            <div class="stats__item">
+                                <h2>3,154</h2>
+                                <p>applicants</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>1,546</h2>
+                                <p>interviews</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>912</h2>
+                                <p>forwards</p>
+                            </div>
+                        </div>
+                        <div class="stats__cols">
+                            <div class="stats__col--nums">
+                                <p>0</p>
+                                <p>100</p>
+                                <p>200</p>
+                                <p>300</p>
+                                <p>400</p>
+                                <p>500</p>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 80px;"></div>
+                                <div class="empty" style="height: 100px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 60px;"></div>
+                                <div class="empty" style="height: 120px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">F</div>
+                                <div class="full" style="height: 70px;"></div>
+                                <div class="empty" style="height: 110px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 50px;"></div>
+                                <div class="empty" style="height: 130px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 40px;"></div>
+                                <div class="empty" style="height: 140px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="content-tab2" class="content-tab">
+                    <div class="stats">
+                        <div class="stats__items">
+                            <div class="stats__item">
+                                <h2>3,154</h2>
+                                <p>applicants</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>1,546</h2>
+                                <p>interviews</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>912</h2>
+                                <p>forwards</p>
+                            </div>
+                        </div>
+                        <div class="stats__cols">
+                            <div class="stats__col--nums">
+                                <p>0</p>
+                                <p>100</p>
+                                <p>200</p>
+                                <p>300</p>
+                                <p>400</p>
+                                <p>500</p>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 80px;"></div>
+                                <div class="empty" style="height: 100px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 60px;"></div>
+                                <div class="empty" style="height: 120px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">F</div>
+                                <div class="full" style="height: 70px;"></div>
+                                <div class="empty" style="height: 110px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 50px;"></div>
+                                <div class="empty" style="height: 130px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 40px;"></div>
+                                <div class="empty" style="height: 140px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="content-tab3" class="content-tab">
+                    <div class="stats">
+                        <div class="stats__items">
+                            <div class="stats__item">
+                                <h2>3,154</h2>
+                                <p>applicants</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>1,546</h2>
+                                <p>interviews</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>912</h2>
+                                <p>forwards</p>
+                            </div>
+                        </div>
+                        <div class="stats__cols">
+                            <div class="stats__col--nums">
+                                <p>0</p>
+                                <p>100</p>
+                                <p>200</p>
+                                <p>300</p>
+                                <p>400</p>
+                                <p>500</p>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 80px;"></div>
+                                <div class="empty" style="height: 100px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 60px;"></div>
+                                <div class="empty" style="height: 120px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">F</div>
+                                <div class="full" style="height: 70px;"></div>
+                                <div class="empty" style="height: 110px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 50px;"></div>
+                                <div class="empty" style="height: 130px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 40px;"></div>
+                                <div class="empty" style="height: 140px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="content-tab4" class="content-tab">
+                    <div class="stats">
+                        <div class="stats__items">
+                            <div class="stats__item">
+                                <h2>3,154</h2>
+                                <p>applicants</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>1,546</h2>
+                                <p>interviews</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>912</h2>
+                                <p>forwards</p>
+                            </div>
+                        </div>
+                        <div class="stats__cols">
+                            <div class="stats__col--nums">
+                                <p>0</p>
+                                <p>100</p>
+                                <p>200</p>
+                                <p>300</p>
+                                <p>400</p>
+                                <p>500</p>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 80px;"></div>
+                                <div class="empty" style="height: 100px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 60px;"></div>
+                                <div class="empty" style="height: 120px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">F</div>
+                                <div class="full" style="height: 70px;"></div>
+                                <div class="empty" style="height: 110px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 50px;"></div>
+                                <div class="empty" style="height: 130px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 40px;"></div>
+                                <div class="empty" style="height: 140px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="content-tab5" class="content-tab">
+                    <div class="stats">
+                        <div class="stats__items">
+                            <div class="stats__item">
+                                <h2>3,154</h2>
+                                <p>applicants</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>1,546</h2>
+                                <p>interviews</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>912</h2>
+                                <p>forwards</p>
+                            </div>
+                        </div>
+                        <div class="stats__cols">
+                            <div class="stats__col--nums">
+                                <p>0</p>
+                                <p>100</p>
+                                <p>200</p>
+                                <p>300</p>
+                                <p>400</p>
+                                <p>500</p>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 80px;"></div>
+                                <div class="empty" style="height: 100px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 60px;"></div>
+                                <div class="empty" style="height: 120px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">F</div>
+                                <div class="full" style="height: 70px;"></div>
+                                <div class="empty" style="height: 110px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 50px;"></div>
+                                <div class="empty" style="height: 130px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 40px;"></div>
+                                <div class="empty" style="height: 140px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="content-tab6" class="content-tab">
+                    <div class="stats">
+                        <div class="stats__items">
+                            <div class="stats__item">
+                                <h2>3,154</h2>
+                                <p>applicants</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>1,546</h2>
+                                <p>interviews</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>912</h2>
+                                <p>forwards</p>
+                            </div>
+                        </div>
+                        <div class="stats__cols">
+                            <div class="stats__col--nums">
+                                <p>0</p>
+                                <p>100</p>
+                                <p>200</p>
+                                <p>300</p>
+                                <p>400</p>
+                                <p>500</p>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 80px;"></div>
+                                <div class="empty" style="height: 100px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 60px;"></div>
+                                <div class="empty" style="height: 120px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">F</div>
+                                <div class="full" style="height: 70px;"></div>
+                                <div class="empty" style="height: 110px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 50px;"></div>
+                                <div class="empty" style="height: 130px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 40px;"></div>
+                                <div class="empty" style="height: 140px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="content-tab7" class="content-tab">
+                    <div class="stats">
+                        <div class="stats__items">
+                            <div class="stats__item">
+                                <h2>3,154</h2>
+                                <p>applicants</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>1,546</h2>
+                                <p>interviews</p>
+                            </div>
+                            <div class="stats__item">
+                                <h2>912</h2>
+                                <p>forwards</p>
+                            </div>
+                        </div>
+                        <div class="stats__cols">
+                            <div class="stats__col--nums">
+                                <p>0</p>
+                                <p>100</p>
+                                <p>200</p>
+                                <p>300</p>
+                                <p>400</p>
+                                <p>500</p>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 80px;"></div>
+                                <div class="empty" style="height: 100px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 60px;"></div>
+                                <div class="empty" style="height: 120px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">F</div>
+                                <div class="full" style="height: 70px;"></div>
+                                <div class="empty" style="height: 110px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 30px;"></div>
+                                <div class="empty" style="height: 150px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">S</div>
+                                <div class="full" style="height: 100px;"></div>
+                                <div class="empty" style="height: 80px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">M</div>
+                                <div class="full" style="height: 120px;"></div>
+                                <div class="empty" style="height: 60px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">T</div>
+                                <div class="full" style="height: 50px;"></div>
+                                <div class="empty" style="height: 130px;"></div>
+                            </div>
+                            <div class="stats__col">
+                                <div class="day">W</div>
+                                <div class="full" style="height: 40px;"></div>
+                                <div class="empty" style="height: 140px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="description">
+                <div class="position">
+                    <div class="position__row topper">
+                        <div class="position__row--title">
+                            job description
+                        </div>
+                        <div class="position__row--info edit">
+                            <a href="#"><i class="fas fa-pencil-alt"></i> edit</a>
+                        </div>
+                    </div>
+                    <div class="position__row">
+                        <div class="position__row--title">
+                            POSITION TITLE
+                        </div>
+                        <div class="position__row--info">
+                            Customer Service Representative
+                        </div>
+                    </div>
+                    <div class="position__row">
+                        <div class="position__row--title">
+                            LOCATION
+                        </div>
+                        <div class="position__row--info">
+                            San Francisco, CA
+                        </div>
+                    </div>
+                    <div class="position__row">
+                        <div class="position__row--title">
+                            EMPLOYMENT TYPE
+                        </div>
+                        <div class="position__row--info">
+                            Full-time
+                        </div>
+                    </div>
+                    <div class="position__row">
+                        <div class="position__row--title">
+                            EXPERIENCE
+                        </div>
+                        <div class="position__row--info">
+                            Mid-level
+                        </div>
+                    </div>
+                    <div class="position__row">
+                        <div class="position__row--title">
+                            STATUS
+                        </div>
+                        <div class="position__row--info">
+                            Open
+                        </div>
+                    </div>
+                    <div class="position__row">
+                        <div class="position__row--title">
+                            DESCRIPTION
+                        </div>
+                        <div class="position__row--info">
+                            The Customer Service Representative is responsible for interacting with and providing
+                            quality assistance to all radical customers, responsible for keeping up-to-date on the
+                            various product shizzle; helping the bidness reduce customer service wait times while doing
+                            a backhand spring and eating a ham sandwich.
+                        </div>
+                    </div>
+                    <div class="position__row">
+                        <div class="position__row--title">
+                            HIRING LEAD
+                        </div>
+                        <div class="position__row--info">
+                            Tom Tizzy
+                        </div>
+                    </div>
+                    <div class="position__row down">
+                        <div class="position__row--title">
+                            APPROVED SALARY
+                        </div>
+                        <div class="position__row--info">
+                            $58,000
+                        </div>
+                    </div>
+                </div>
+                <aside class="additional">
+                    <div class="additional__social">
+                        <a href="#" class="additional__social--link facebook"><i class="fab fa-facebook-f"></i> Post to
+                            Facebook</a>
+                        <a href="#" class="additional__social--link twitter"><i class="fab fa-twitter"></i> Tweet this
+                            Job</a>
+                        <a href="#" class="additional__social--link linkedin"><i class="fab fa-linkedin"></i> Post to
+                            Linkedin</a>
+                    </div>
+                    <div class="additional__form">
+                        <h3><i class="fas fa-globe-americas"></i> Link to this Job</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A facilis hic laborum molestias
+                            temporibus.</p>
+                        <div class="copy">
+                            <input type="text" value="http://loremipsum.dol/sit" id="myInput">
+                            <button onclick="myFunction()">Copy</button>
+                        </div>
+                    </div>
+                    <div class="additional__form">
+                        <h3><i class="fas fa-window-maximize"></i> Link to this Job</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A facilis hic laborum molestias
+                            temporibus.</p>
+                        <div class="copy">
+                            <!-- <p>script type="text/javascript"</p>
+                            <a href="#">Copy</a> -->
+                            <input type="text" value="script type=text/javascript" id="myInput1">
+                            <button onclick="myFunction1()">Copy</button>
+                        </div>
+                    </div>
+                    <div class="additional__form">
+                        <h3><i class="fas fa-paper-plane"></i> Link to this Job</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A facilis hic laborum molestias
+                            temporibus.</p>
+                        <p class="upload">
+                            tomtizzy@gmail.com
+                        </p>
+                    </div>
+                </aside>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function myFunction() {
+            var copyText = document.getElementById("myInput");
+            copyText.select();
+            document.execCommand("copy");
+            alert("Copied the text: " + copyText.value);
+        }
+    </script>
+    <script>
+        function myFunction1() {
+            var copyText = document.getElementById("myInput1");
+            copyText.select();
+            document.execCommand("copy");
+            alert("Copied the text: " + copyText.value);
+        }
+    </script>
+</body>
+
+</html>
